@@ -1,1 +1,328 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.2;
+}
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
+.container header {
+  background: #4b4b4b;
+  margin-top: 20px;
+  display: flex;
+  padding: 20px 2%;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+.container header h1 {
+  color: orange;
+}
+.container header nav {
+  padding-right: 2%;
+  width: 65%;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    text-align: center;
+    width: 100%;
+  }
+}
+.container header nav a {
+  text-decoration: none;
+  color: white;
+  padding-right: 0.5%;
+  padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .container header {
+    display: block;
+    text-align: center;
+  }
+}
+.container .bio {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  background: lightgray;
+  padding: 10px 0 10px 0;
+}
+@media (max-width: 500px) img {
+  .container .bio {
+    max-width: 80%;
+    height: auto;
+  }
+}
+.container .bio .card {
+  width: 53%;
+  padding-left: 5%;
+}
+.container .bio .card h1 {
+  font-size: 2.6rem;
+  padding-bottom: 40px;
+}
+.container .bio .card p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.container .email {
+  display: inline-block;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.15rem;
+}
+.container .htype h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
+}
+.container .bio2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #4b4b4b;
+  padding: 30px 5% 30px 0;
+  font-size: 0.95rem;
+}
+.container .bio2 .intro {
+  width: 50%;
+  padding-left: 3.5%;
+  border-left: 2px dashed orange;
+}
+.container .bio2 .edu {
+  width: 30%;
+  padding: 20px 0 20px 3%;
+  background: lightgray;
+}
+.container .bio2 .edu h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
+}
+@media (max-width: 500px) {
+  .container .bio2 .edu {
+    width: 35%;
+    padding-left: 1%;
+    padding-right: 0.3%;
+  }
+}
+.container .skills {
+  margin: 20px 30% 0 0%;
+  font-size: 0.95rem;
+  padding: 20px  5% 20px 5%;
+  background: lightgray;
+}
+.container .skills h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
+}
+.container .skills ul {
+  margin-bottom: 10px;
+}
+.container .skills ul li {
+  padding-left: 5%;
+}
+.container .work {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 0.95rem;
+  padding: 20px  5% 20px 5%;
+  background: lightgray;
+}
+.container .work h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
+}
+.container .background {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container .worktab {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+.container .worktab .tab1 {
+  width: 7%;
+  font-size: 0.9rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container .worktab .tab2 {
+  width: 40%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container .worktab .tab3 {
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container .worktab .tab4 {
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container footer {
+  margin-top: 20px;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  color: white;
+  background: #4b4b4b;
+  text-align: center;
+}
