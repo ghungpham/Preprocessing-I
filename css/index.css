@@ -146,7 +146,7 @@ body {
 }
 @media (max-width: 500px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 }
 header {
@@ -165,11 +165,23 @@ header nav {
   width: 65%;
   text-align: right;
 }
+@media (max-width: 500px) {
+  header nav {
+    text-align: center;
+    width: 100%;
+  }
+}
 header nav a {
   text-decoration: none;
   color: white;
   padding-right: 0.5%;
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  header {
+    display: block;
+    text-align: center;
+  }
 }
 .bio {
   display: flex;
@@ -179,6 +191,12 @@ header nav a {
   margin-top: 30px;
   background: lightgray;
   padding: 10px 0 10px 0;
+}
+@media (max-width: 500px) img {
+  .bio {
+    max-width: 80%;
+    height: auto;
+  }
 }
 .bio .card {
   width: 53%;
@@ -191,6 +209,18 @@ header nav a {
 .bio .card p {
   font-size: 1.2rem;
   line-height: 1.2;
+}
+.email {
+  display: inline-block;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.15rem;
+}
+.htype h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
 }
 .bio2 {
   display: flex;
@@ -212,7 +242,18 @@ header nav a {
   background: lightgray;
 }
 .bio2 .edu h1 {
+  display: inline-block;
   margin-bottom: 10px;
+  font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
+}
+@media (max-width: 500px) {
+  .bio2 .edu {
+    width: 35%;
+    padding-left: 1%;
+    padding-right: 0.3%;
+  }
 }
 .skills {
   margin: 20px 30% 0 0%;
@@ -221,8 +262,11 @@ header nav a {
   background: lightgray;
 }
 .skills h1 {
+  display: inline-block;
   margin-bottom: 10px;
   font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
 }
 .skills ul {
   margin-bottom: 10px;
@@ -238,14 +282,44 @@ header nav a {
   background: lightgray;
 }
 .work h1 {
+  display: inline-block;
   margin-bottom: 10px;
   font-size: 1.15rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
 }
-.worktable {
+.background {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.worktab {
   display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+.worktab .tab1 {
+  width: 7%;
+  font-size: 0.9rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.worktab .tab2 {
+  width: 40%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.worktab .tab3 {
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.worktab .tab4 {
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 footer {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 10px 0 10px 0;
   width: 100%;
   color: white;

@@ -73,7 +73,7 @@ body {
 	max-width: 820px;
 	margin: 0 auto;
 	@media (max-width: 500px) {
-		width: 100%;}
+		width: 95%;}
 }
 
 header{
@@ -90,6 +90,12 @@ header{
 		padding-right: 2%;
 		width: 65%; 
 		text-align: right;
+
+		@media (max-width: 500px) {
+		text-align:center;
+		width: 100%;
+		}
+
 		a{
 			text-decoration: none;
 			color: white;
@@ -97,6 +103,10 @@ header{
 			padding-left: 2%;
 		}
 	}
+	@media (max-width: 500px) {
+		display: block;
+		text-align: center;
+		}
 
 } //header
 
@@ -109,6 +119,11 @@ header{
 	background: lightgray;
 	padding: 10px 0 10px 0;
 
+	@media (max-width: 500px) img{
+		max-width: 80%;
+		height: auto;}
+
+	
 	.card {
 		width: 53%;
 		padding-left:5%;
@@ -121,6 +136,23 @@ header{
 			font-size: 1.2rem;
 			line-height: 1.2;
 		}
+	}
+}
+
+.email {
+	display: inline-block;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.15rem;
+}
+
+//mixins
+.htype {
+	h1{
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 1.15rem;
+	padding-bottom: 4px;
+	border-bottom: 2px solid orange;
 	}
 }
 
@@ -142,22 +174,22 @@ header{
 		width: 30%;
 		padding: 20px 0 20px 3%;
 		background: lightgray;
-		h1{
-			margin-bottom: 10px;
-		}
+		.htype;
+		@media (max-width: 500px){
+			width: 35%;
+			padding-left: 1%;
+			padding-right: 0.3%}
+
 	}
 }
+
 
 .skills {
 	margin: 20px 30% 0 0%;
 	font-size: 0.95rem;
 	padding: 20px  5% 20px 5%;
 	background: lightgray;
-
-	h1{
-		margin-bottom: 10px;
-		font-size: 1.15rem;
-	}
+	.htype;
 
 	ul{
 		margin-bottom: 10px;
@@ -174,19 +206,40 @@ header{
 	font-size: 0.95rem;
 	padding: 20px  5% 20px 5%;
 	background: lightgray;
-
-	h1{
-		margin-bottom: 10px;
-		font-size: 1.15rem;
-	}
+	.htype;
   }
 
-.worktable {
+.background{
+	// background: blue;
+	// border: 1px solid red;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}  
+.worktab{
 	display: flex;
+	justify-content: space-evenly;
+	border-bottom: 1px solid black;
+	.tab1{
+		width: 7%;
+		font-size: 0.9rem;
+		.background;
+	}
+	.tab2 {
+		width: 40%;
+		.background;
+	}
+	.tab3 {
+		width: 20%;
+		.background;
+	}
+	.tab4 {
+		width: 20%;
+		.background;
+	} 
 }
 
 footer{
-	margin-top: 40px;
+	margin-top: 20px;
 	padding: 10px 0 10px 0;
 	width: 100%;
 	color: white;
