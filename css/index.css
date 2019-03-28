@@ -144,6 +144,11 @@ body {
   max-width: 820px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   background: #4b4b4b;
   margin-top: 20px;
@@ -168,6 +173,7 @@ header nav a {
 }
 .bio {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 30px;
@@ -234,6 +240,9 @@ header nav a {
 .work h1 {
   margin-bottom: 10px;
   font-size: 1.15rem;
+}
+.worktable {
+  display: flex;
 }
 footer {
   margin-top: 40px;

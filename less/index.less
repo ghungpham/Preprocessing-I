@@ -72,6 +72,8 @@ body {
 .container {
 	max-width: 820px;
 	margin: 0 auto;
+	@media (max-width: 500px) {
+		width: 100%;}
 }
 
 header{
@@ -100,6 +102,7 @@ header{
 
 .bio{
 	display: flex;
+	width: 100%;
 	justify-content: space-evenly;
 	align-items: center;
 	margin-top: 30px;
@@ -177,6 +180,11 @@ header{
 		font-size: 1.15rem;
 	}
   }
+
+.worktable {
+	display: flex;
+}
+
 footer{
 	margin-top: 40px;
 	padding: 10px 0 10px 0;
