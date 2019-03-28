@@ -149,7 +149,7 @@ body {
     width: 95%;
   }
 }
-header {
+.container header {
   background: #4b4b4b;
   margin-top: 20px;
   display: flex;
@@ -157,72 +157,72 @@ header {
   justify-content: space-between;
   font-size: 1.1rem;
 }
-header h1 {
+.container header h1 {
   color: orange;
 }
-header nav {
+.container header nav {
   padding-right: 2%;
   width: 65%;
   text-align: right;
 }
 @media (max-width: 500px) {
-  header nav {
+  .container header nav {
     text-align: center;
     width: 100%;
   }
 }
-header nav a {
+.container header nav a {
   text-decoration: none;
   color: white;
   padding-right: 0.5%;
   padding-left: 2%;
 }
 @media (max-width: 500px) {
-  header {
+  .container header {
     display: block;
     text-align: center;
   }
 }
-.bio {
+.container .bio {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 30px;
   background: lightgray;
   padding: 10px 0 10px 0;
 }
 @media (max-width: 500px) img {
-  .bio {
+  .container .bio {
     max-width: 80%;
     height: auto;
   }
 }
-.bio .card {
+.container .bio .card {
   width: 53%;
   padding-left: 5%;
 }
-.bio .card h1 {
+.container .bio .card h1 {
   font-size: 2.6rem;
   padding-bottom: 40px;
 }
-.bio .card p {
+.container .bio .card p {
   font-size: 1.2rem;
   line-height: 1.2;
 }
-.email {
+.container .email {
   display: inline-block;
   font-family: 'Inconsolata', monospace;
   font-size: 1.15rem;
 }
-.htype h1 {
+.container .htype h1 {
   display: inline-block;
   margin-bottom: 10px;
   font-size: 1.15rem;
   padding-bottom: 4px;
   border-bottom: 2px solid orange;
 }
-.bio2 {
+.container .bio2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,17 +231,17 @@ header nav a {
   padding: 30px 5% 30px 0;
   font-size: 0.95rem;
 }
-.bio2 .intro {
+.container .bio2 .intro {
   width: 50%;
   padding-left: 3.5%;
   border-left: 2px dashed orange;
 }
-.bio2 .edu {
+.container .bio2 .edu {
   width: 30%;
   padding: 20px 0 20px 3%;
   background: lightgray;
 }
-.bio2 .edu h1 {
+.container .bio2 .edu h1 {
   display: inline-block;
   margin-bottom: 10px;
   font-size: 1.15rem;
@@ -249,76 +249,76 @@ header nav a {
   border-bottom: 2px solid orange;
 }
 @media (max-width: 500px) {
-  .bio2 .edu {
+  .container .bio2 .edu {
     width: 35%;
     padding-left: 1%;
     padding-right: 0.3%;
   }
 }
-.skills {
+.container .skills {
   margin: 20px 30% 0 0%;
   font-size: 0.95rem;
   padding: 20px  5% 20px 5%;
   background: lightgray;
 }
-.skills h1 {
+.container .skills h1 {
   display: inline-block;
   margin-bottom: 10px;
   font-size: 1.15rem;
   padding-bottom: 4px;
   border-bottom: 2px solid orange;
 }
-.skills ul {
+.container .skills ul {
   margin-bottom: 10px;
 }
-.skills ul li {
+.container .skills ul li {
   padding-left: 5%;
 }
-.work {
+.container .work {
   margin-top: 20px;
   width: 100%;
   font-size: 0.95rem;
   padding: 20px  5% 20px 5%;
   background: lightgray;
 }
-.work h1 {
+.container .work h1 {
   display: inline-block;
   margin-bottom: 10px;
   font-size: 1.15rem;
   padding-bottom: 4px;
   border-bottom: 2px solid orange;
 }
-.background {
+.container .background {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.worktab {
+.container .worktab {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
-.worktab .tab1 {
+.container .worktab .tab1 {
   width: 7%;
   font-size: 0.9rem;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.worktab .tab2 {
+.container .worktab .tab2 {
   width: 40%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.worktab .tab3 {
+.container .worktab .tab3 {
   width: 20%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.worktab .tab4 {
+.container .worktab .tab4 {
   width: 20%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-footer {
+.container footer {
   margin-top: 20px;
   padding: 10px 0 10px 0;
   width: 100%;

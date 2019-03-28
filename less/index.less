@@ -74,175 +74,173 @@ body {
 	margin: 0 auto;
 	@media (max-width: 500px) {
 		width: 95%;}
-}
 
-header{
-	background: #4b4b4b;
+	header{
+	background: @darkgray;
 	margin-top: 20px;
 	display: flex;
 	padding: 20px 2%;
 	justify-content: space-between;
 	font-size: 1.1rem;
-	h1{
+		h1  {
 		color: orange;
-	}
-	nav {
+		}
+		nav {
 		padding-right: 2%;
 		width: 65%; 
 		text-align: right;
-
 		@media (max-width: 500px) {
 		text-align:center;
 		width: 100%;
 		}
-
-		a{
-			text-decoration: none;
-			color: white;
-			padding-right: 0.5%;
-			padding-left: 2%;
+			a{
+				text-decoration: none;
+				color: white;
+				padding-right: 0.5%;
+				padding-left: 2%;
 		}
-	}
+		}
 	@media (max-width: 500px) {
 		display: block;
 		text-align: center;
 		}
+	} //header
 
-} //header
+	.bio{
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 30px;
+		background: lightgray;
+		padding: 10px 0 10px 0;
 
-.bio{
-	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 30px;
-	background: lightgray;
-	padding: 10px 0 10px 0;
-
-	@media (max-width: 500px) img{
-		max-width: 80%;
-		height: auto;}
+		@media (max-width: 500px) img{
+			max-width: 80%;
+			height: auto;}
 
 	
-	.card {
-		width: 53%;
-		padding-left:5%;
+		.card {
+			width: 53%;
+			padding-left:5%;
 
+			h1{
+				font-size: 2.6rem;
+				padding-bottom: 40px;
+			}
+			p{
+				font-size: 1.2rem;
+				line-height: 1.2;
+			}
+		}
+	}
+
+	.email {
+		display: inline-block;
+		font-family: 'Inconsolata', monospace;
+		font-size: 1.15rem;
+	}
+
+	//mixins
+	.htype {
 		h1{
-			font-size: 2.6rem;
-			padding-bottom: 40px;
+		display: inline-block;
+		margin-bottom: 10px;
+		font-size: 1.15rem;
+		padding-bottom: 4px;
+		border-bottom: 2px solid orange;
 		}
-		p{
-			font-size: 1.2rem;
-			line-height: 1.2;
+	}
+
+	.bio2{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		border-top: 1px solid @darkgray;
+		padding: 30px 5% 30px 0;
+		font-size: 0.95rem;
+
+		.intro {
+			width: 50%;
+			padding-left: 3.5%;
+			border-left: 2px dashed orange;
+		}
+		.edu{
+			width: 30%;
+			padding: 20px 0 20px 3%;
+			background: lightgray;
+			.htype;
+			@media (max-width: 500px){
+				width: 35%;
+				padding-left: 1%;
+				padding-right: 0.3%}
+
 		}
 	}
-}
 
-.email {
-	display: inline-block;
-	font-family: 'Inconsolata', monospace;
-	font-size: 1.15rem;
-}
 
-//mixins
-.htype {
-	h1{
-	display: inline-block;
-	margin-bottom: 10px;
-	font-size: 1.15rem;
-	padding-bottom: 4px;
-	border-bottom: 2px solid orange;
-	}
-}
-
-.bio2{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 20px;
-	border-top: 1px solid #4b4b4b;
-	padding: 30px 5% 30px 0;
-	font-size: 0.95rem;
-
-	.intro {
-		width: 50%;
-		padding-left: 3.5%;
-		border-left: 2px dashed orange;
-	}
-	.edu{
-		width: 30%;
-		padding: 20px 0 20px 3%;
+	.skills {
+		margin: 20px 30% 0 0%;
+		font-size: 0.95rem;
+		padding: 20px  5% 20px 5%;
 		background: lightgray;
 		.htype;
-		@media (max-width: 500px){
-			width: 35%;
-			padding-left: 1%;
-			padding-right: 0.3%}
 
+		ul{
+			margin-bottom: 10px;
+		}
+
+		ul li {
+			padding-left: 5%;
+		}
+	}
+
+	.work {
+		margin-top: 20px;
+		width: 100%;
+		font-size: 0.95rem;
+		padding: 20px  5% 20px 5%;
+		background: lightgray;
+		.htype;
+	}
+
+	.background{
+		// background: blue;
+		// border: 1px solid red;
+		padding-top: 5px;
+		padding-bottom: 5px; 
+	}  
+	.worktab{
+		display: flex;
+		justify-content: space-evenly;
+		border-bottom: 1px solid black;
+		.tab1{
+			width: 7%;
+			font-size: 0.9rem;
+			.background;
+		}
+		.tab2 {
+			width: 40%;
+			.background;
+		}
+		.tab3 {
+			width: 20%;
+			.background;
+		}
+		.tab4 {
+			width: 20%;
+			.background;
+		} 
+	}
+
+	footer{
+		margin-top: 20px;
+		padding: 10px 0 10px 0;
+		width: 100%;
+		color: white;
+		background: @darkgray;
+		text-align: center;
 	}
 }
 
-
-.skills {
-	margin: 20px 30% 0 0%;
-	font-size: 0.95rem;
-	padding: 20px  5% 20px 5%;
-	background: lightgray;
-	.htype;
-
-	ul{
-		margin-bottom: 10px;
-	}
-
-	ul li {
-		padding-left: 5%;
-	}
-}
-
-.work {
-	margin-top: 20px;
-	width: 100%;
-	font-size: 0.95rem;
-	padding: 20px  5% 20px 5%;
-	background: lightgray;
-	.htype;
-  }
-
-.background{
-	// background: blue;
-	// border: 1px solid red;
-	padding-top: 5px;
-	padding-bottom: 5px; 
-}  
-.worktab{
-	display: flex;
-	justify-content: space-evenly;
-	border-bottom: 1px solid black;
-	.tab1{
-		width: 7%;
-		font-size: 0.9rem;
-		.background;
-	}
-	.tab2 {
-		width: 40%;
-		.background;
-	}
-	.tab3 {
-		width: 20%;
-		.background;
-	}
-	.tab4 {
-		width: 20%;
-		.background;
-	} 
-}
-
-footer{
-	margin-top: 20px;
-	padding: 10px 0 10px 0;
-	width: 100%;
-	color: white;
-	background: @darkgray;
-	text-align: center;
-}
